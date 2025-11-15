@@ -1,5 +1,11 @@
 # namesake
 
+## 1.1.3
+
+### Patch Changes
+
+- 908b583: Fix color issues in Windows High Contrast (Forced Colors) mode
+
 ## 1.1.2
 
 ### Patch Changes
