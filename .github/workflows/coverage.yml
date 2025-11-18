@@ -75,7 +75,7 @@ jobs:
           echo "artifact_name=${name}" >> $GITHUB_ENV
 
       - name: Upload coverage
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ env.artifact_name }}
           path: coverage
@@ -91,13 +91,13 @@ jobs:
         uses: actions/checkout@v5
   
       - name: Download coverage (${{ needs.test-coverage.outputs.artifact_branch }})
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: ${{ needs.test-coverage.outputs.artifact_branch }}
           path: coverage
 
       - name: Download coverage (main)
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: ${{ needs.test-coverage.outputs.artifact_main }}
           path: coverage-main
