@@ -1,7 +1,6 @@
 import { api } from "@convex/_generated/api";
 import { createFileRoute } from "@tanstack/react-router";
 import { useMutation, useQuery } from "convex/react";
-import { Sprout } from "lucide-react";
 import { toast } from "sonner";
 import { PageHeader } from "@/components/app";
 import { Banner, Link } from "@/components/common";
@@ -40,13 +39,13 @@ function RouteComponent() {
           onChange={handleStatusChange}
         />
       </PageHeader>
-      <Banner icon={Sprout} className="mb-6 mt-1">
-        <strong>Welcome to Namesake!</strong> We're glad you're here. For help
-        with the process or to share how things are going, come join us on{" "}
-        <Link href="https:/namesake.fyi/chat" target="_blank">
-          Discord
-        </Link>{" "}
-        or <Link href="mailto:hey@namesake.fyi">email us</Link>.
+      <Banner className="mb-6 mt-1" variant="warning">
+        <strong>
+          Existing accounts and data will be deleted on March 31, 2026.
+        </strong>{" "}
+        Namesake guides and forms are now available{" "}
+        <Link href="https://namesake.fyi">without login</Link>. Questions? Email
+        us at <Link href="mailto:hey@namesake.fyi">hey@namesake.fyi</Link>.
       </Banner>
       <HowToChangeNames />
       <QuestCallToAction
