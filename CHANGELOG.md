@@ -1,5 +1,11 @@
 # namesake
 
+## 1.2.0
+
+### Minor Changes
+
+- 88973dc: Disable new user registration. Namesake guides and forms are now available at namesake.fyi without login.
+
 ## 1.1.3
 
 ### Patch Changes
